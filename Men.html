@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Men</title>
+  <style>
+    body {
+      margin: 0;
+      font-family:Arial, Helvetica, sans-serif;
+      background-color: #e9e9e6;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    .navbar {
+      margin-top: 10px;
+      height: 60px;
+      background-color: white;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+   
+    .navbar a {
+      margin: 0 15px;
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar a:hover {
+      color: red;
+    }
+
+    .navbar a img {
+      width: 80px;
+      margin: 0 40px;
+    }
+
+    .navbar input {
+      flex: 1;
+      max-width: 200px;
+      background-color: #f0e9e9;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      padding: 5px 10px;
+      margin-left: auto;
+    }
+
+    .navbar input:hover {
+      background-color: #fafafa;
+    }
+
+    /* ---------- HEADER TEXT ---------- */
+    .sale {
+      margin: 20px 40px;
+      font-size: 14px;
+      font-weight: bold;
+      color: red;
+    }
+
+    .title {
+      margin-left: 40px;
+    }
+
+    .sub-title {
+      margin-left: 40px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .sub-title span {
+      color: red;
+    }
+
+    .link {
+      margin: 10px 40px;
+    }
+
+    .link a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .link a:hover {
+      color: red;
+      
+    }
+
+      .login{
+      border: 1px solid black;
+      border-radius: 3px;
+      margin-left: 7px;
+    }
+    /* ---------- FILTER BAR ---------- */
+    .filter-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #c9c5c5;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 20px auto;
+      max-width: 1200px;
+      flex-wrap: wrap;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .filters select,
+    .sort select {
+      border: none;
+      background: transparent;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .filters select:hover,
+    .sort select:hover {
+      color: red;
+    }
+
+    .sort {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    /* ---------- SHOP SECTION ---------- */
+    .shop-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: #e2e7e6;
+      padding: 20px;
+      gap: 15px;
+    }
+    img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.9sec;
+
+    }
+    .box {
+      flex: 1 1 22%;
+      min-width: 220px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
+    }
+
+    .box-img {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+
+    .box h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .box p {
+      color: #007185;
+      margin-top: 5px;
+    }
+    .showmore span{
+      
+      color: black;
+      border: 1px solid black;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 14px;
+      margin-left: 50%;
+      margin-top: 5%;
+    }
+    .showmore span:hover{
+        color: red;
+        cursor: pointer;
+        border: 1px solid red;
+    }
+
+/*-------Footer-------*/
+    footer{
+
+margin-top: 15px;
+}
+
+.club{
+    color: red;
+}
+
+.foot-panel1:hover{
+   cursor: pointer;
+   color: red;
+}
+
+.foot-panel1{
+    background-color: rgb(216, 209, 209);
+    color: black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+
+}
+.foot-panel2{
+    background-color: rgb(234, 226, 226);
+    color: black;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul{
+    margin-top: 20px;
+   
+}
+
+ul a{display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: black;
+   
+}
+
+.discbtn{
+    background-color: rgb(239, 13, 13);
+    margin: 20px;
+    border-color: red;
+    color: white;
+    
+}
+.discbtn:hover{
+    color: black;
+    cursor: pointer;
+}
+.foot-panel3{
+  
+    color: white;
+    border-top:0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.foot-panel4{
+    background-color: rgb(241, 235, 235);
+    color: black;
+    height: 80px;
+    text-align: center;
+    
+}
+
+
+.footimg{
+    margin: 40px 0;
+    
+}
+.footimg img{
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.footimg img:hover{
+        background-color: rgb(190, 124, 124);
+}
+.copyright{
+    padding-top: 5px;
+
+
+}
+    
+.src{
+      margin-left: 38%;
+      color: white;
+      background-color: black;
+      border-radius: 5px;
+    }
+    .src:hover{
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="Home.html">Home</a>
+    <a href="Men.html">Men</a>
+    <a href="Woman.html">Woman</a>
+    <a href="Kids.html">Kids</a>
+    <a href="Brand.html">Brand</a>
+    <a href="Home.html"><img src="https://cdn.worldvectorlogo.com/logos/bata-4.svg" alt="Bata"></a>
+    <button class="src">Search
+    <input type="text" placeholder="🔍Search">
+    </button>
+    <div class="login">
+    <a href="Login.html"><label for="">Login/Sign Up</label></a>
+    </div>
+  </nav>
+
+  <!-- HEADER SECTION -->
+  <div class="sale">SALE</div>
+  <img src="https://www.bata.com/on/demandware.static/-/Sites-bata-in-Library/default/dwf8006beb/PLP/Thinstrip.jpg" alt="">
+  <h2 class="title">New Arrivals for Men [636]</h2>
+  <h3 class="sub-title">The brand where you can buy <span>Anything</span></h3>
+  <div class="link">
+    <a href="Woman.html"><span>Shoes</span></a>
+    <a href="Men.html"><span>Accessories</span></a>
+    <a href="Kids.html"><span>Apparels</span></a>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filters">
+      <select><option value="price">Price</option>
+       <option value="1000">1000</option>
+       <option value="2000">2000</option>
+       <option value="3000">3000</option>
+       <option value="4000">4000</option>
+       <option value="5000">5000</option>
+       <option value="6000">6000</option>
+       <option value="7000">7000</option>
+
+          </select>
+      <select><option value="size">Size</option>
+        <option value="1UK">1UK</option>
+        <option value="2UK">2UK</option>
+        <option value="3UK">3UK</option>
+        <option value="4UK">4UK</option>
+        <option value="5UK">5UK</option>
+        <option value="6UK">6UK</option>
+        <option value="7UK">7UK</option>
+        <option value="8UK">8UK</option>
+        <option value="9UK">9UK</option>
+        <option value="10UK">10UK</option>
+        <option value="11UK">11UK</option>
+        <option value="12UK">12UK</option>
+    
+    </select>
+      <select><option value="color">Color</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="tan">Tan</option>
+        <option value="brown">Brown</option>
+        <option value="cherry">Cherry</option>
+        <option value="beige">Beige</option>
+        <option value="gray">Gray</option>
+        <option value="pink">Pink</option>
+    
+    </select>
+      <select><option value="discount">Discount</option>
+        <option value="Up to 10%">Up to 10%</option>
+        <option value="Up to 11% to 20%">Up to 11% to 20%</option>
+        <option value="Up to 21% to 30%">Up to 21% to 30%</option>
+        <option value="Up to 31% to 40%">Up to 31% to 40%</option>
+         <option value="Up to 41% to 50%">Up to 41% to 50%</option>
+        <option value="Up to 51% to 60%">Up to 51% to 60%</option>
+        <option value="All Discounter">All Discounted</option>
+        
+    
+    </select>
+      <select><option value="brand">Brand</option>
+        <option value="brand">Bata</option>
+        <option value="Bata Red Label">Bata Red Label</option>
+        <option value="BATA SUNSHINE">BATA SUNSHINE</option>
+        <option value="BUBBLEGUMMERS">BUBBLEGUMMERS</option>
+        <option value="DISNEY">DISNEY</option>
+        <option value="Brand">Brand</option>
+    
+    </select>
+      <select><option value="gender">Gender</option>
+        <option value="children">Children</option>
+        <option value="junior">Junior</option>
+        <option value="ladies">Ladies</option>
+        <option value="men">Men</option>
+        <option value="NFT">NFT</option>
+    
+    
+    </select>
+    </div>
+    <div class="sort">
+      <select>
+        <option value="most">Sort by: Most Wanted</option>
+        <option value="low">Lowest Price</option>
+        <option value="high">Highest Price</option>
+        <option value="new">Newest</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- SHOP SECTION -->
+  <div class="shop-section">
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwbc34240c/images/tile/8396549_1.jpeg?sw=960')"></div>
+     
+      <h6>BATA</h6>
+      <h6>Bata Black School Shoes For Boys</h6>
+      <h5>MRP</h5>
+      <h5>999.00</h5>
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <a href="">
+        <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw3ee2a391/images/tile/8391549_1.jpeg?sw=960')"></div>
+      </a>
+      <h6>BATA</h6>
+      <h6>Bata Black School Shoes For Boys</h6>
+      <h5>MRP</h5>
+      <h5>899.00</h5>
+     
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwf4eab783/images/tile/8744246_1.jpeg?sw=960')"></div>
+     <h6>BATA</h6>
+      <h6>Bata brown leather casual mule slipper for men</h6>
+      <h5>MRP</h5>
+      <h5>1,499.00</h5>
+      <h2>2 Colors</h2>
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwedcecd86/images/tile/8734007_1.jpeg?sw=960')"></div>
+     <h6>BATA</h6>
+      <h6>BAta dark brown chappal for men</h6>
+      <h5>MRP</h5>
+      <h5>1,299.00</h5>
+      <h6>2 Colors</h6>
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwf1db8079/images/tile/8779301_1.jpeg?sw=960')"></div>
+      <h6>FLOATZ</h6>
+      <h6>FLOATZ NAVY FLIP-FLOP FOR MEN</h6>
+      <h5>MRP</h5>
+      <h5>1,499.00</h5>
+      <h6>2 Colors</h6>
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dw39f1ceea/images/tile/8714938_1.jpeg?sw=960')"></div>
+     <h6>BATA</h6>
+      <h6>Bata brown casual toe ring slipper for men</h6>
+      <h5>MRP</h5>
+      <h5>999.00</h5>
+      <h6>2 Colors</h6>
+       <p>See more</p>
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwd74ed33f/images/tile/8516171_1.jpeg?sw=505')"></div>
+     <h6>BATA</h6>
+      <h6>Bata black leather forman derby-style shoes for men</h6>
+      <h5>MRP</h5>
+      <h5>1,499.00</h5>
+    </div>
+
+    <div class="box">
+      <h2>New</h2>
+      <div class="box-img" style="background-image:url('https://www.bata.com/dw/image/v2/BCLG_PRD/on/demandware.static/-/Sites-bata-in-master-catalog/default/dwb07b3936/images/tile/8391564_1.jpeg?sw=960')"></div>
+      <h6>BATA</h6>
+      <h6>Bata Black Casual Shoes For Men</h6>
+      <h5>MRP</h5>
+      <h5>2,499.00</h5>
+      <h2>2 Colors</h2>
+    </div>
+  </div>
+
+    <div class="showmore">
+        <span>Show More</span>
+    </div>
+    <footer>
+    <div class="foot-panel1">
+        Back to top
+    </div>
+    <h1 class="club">BATA CLUB WILL SURPRICE YOU</h1>
+    <button class="discbtn">Discover More</button>
+    <div class="foot-panel2">
+        <ul>
+            <p>SUPPORTS</p>
+            <a>Contect Us</a>
+            <a>Chat With Us</a>
+            <a>FAQ</a>
+        </ul>
+
+
+        <ul>
+            <p>EXCLUSIVE SERVICE</p>
+            <a>Chech/Return Order</a>
+            <a>Invite Bata On Wheels</a>
+            <a>COVID Safety Guidelines</a>
+            <a>Bata Loyalty</a>
+            <a>Bata Frenchise</a>
+        </ul>
+
+
+         <ul>
+            <p>COMPANY</p>
+            <a>About Us</a>
+            <a>BATA Worldwide</a>
+            <a>The Bata Company</a>
+            <a>CSR</a>
+            <a>Award & Recognition</a>
+            <a>Become Our Partnet</a>
+            <a>Careers</a>
+        </ul>
+
+
+         <ul>
+            <p>LEGALS</p>
+            <a>Terms and Conditions</a>
+            <a>Press Release</a>
+            <a>Privacy Police</a>
+            <a>Cokkie Pilicy</a>
+            <a>Whistle Blow Police</a>
+            <a>POSH Policy</a>
+            <a>Investor Relation</a>
+        </ul>
+        
+    </div>
+    <div class="footimg">
+        <a href="Home.html">
+    <img src="https://cdn.worldvectorlogo.com/logos/bata-4.svg" alt="">
+        </a>        
+</div>
+    
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Conditions of use</a>
+            <a>Privacy Notice</a>
+            <a>Your Add Privacy Choices</a>
+        </div>
+        
+        <div class="copyright">
+          © 1996-2025, Amazon.com, Inc. or its affiliates
+        </div>
+        
+
+    
+  </footer>
+</body>
+</html>
